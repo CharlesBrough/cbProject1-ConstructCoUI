@@ -14,7 +14,7 @@ pipeline {
         // }
         // stage('deploy'){
         //     steps{
-        //         sh 'aws s3 cp --recursive /home/ec2-user/.jenkins/workspace/Construction-Frontend/dist/ s3://revature-public-bucket'
+        //         sh 'aws s3 cp --recursive /home/ec2-user/.jenkins/workspace/Construction-Frontend/build/ s3://revature-public-bucket/'
         //     }
         // }
     }
