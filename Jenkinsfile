@@ -13,16 +13,16 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        // stage('deploy to s3'){
-        //     steps{
-        //         sh 'aws s3 cp --recursive /home/ec2-user/.jenkins/workspace/Construction-Frontend/build/ s3://revature-public-bucket/'
-        //     }
-        // }
-        stage('deploy to this ec2 apache webserver'){
+        stage('deploy to s3'){
             steps{
-                sh 'rm -rf /var/www/html/jenkins-react-app'
-                sh 'cp -R /home/ec2-user/.jenkins/workspace/Construction-Frontend/build/ /var/www/html/jenkins-react-app'
+                sh 'aws s3 cp --recursive /home/ec2-user/.jenkins/workspace/Construction-Frontend/build/ s3://revature-public-bucket/'
             }
         }
+        // stage('deploy to this ec2 apache webserver'){
+        //     steps{
+        //         sh 'rm -rf /var/www/html/jenkins-react-app'
+        //         sh 'cp -R /home/ec2-user/.jenkins/workspace/Construction-Frontend/build/ /var/www/html/jenkins-react-app'
+        //     }
+        // }
     }
 }
