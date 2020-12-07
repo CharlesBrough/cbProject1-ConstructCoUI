@@ -6,13 +6,17 @@ This is a front-end UI client for the Construction Company Server back-end writt
 
 ## Technologies Used
 
+- AWS EC2
+  - Apache Webserver
+  - Node.js and npm
+  - Jenkins (& Tomcat on backend)
 - HTML
 - CSS
 - JS
-- Node.js & node package manager
 - React.js
   - Webpack
   - Babel
+  - & more
 
 ## Development
 
