@@ -10,6 +10,7 @@ html, body {
 header {
 	height: 64px;
 	background: #333;
+	display: block;
 }
 
 nav {

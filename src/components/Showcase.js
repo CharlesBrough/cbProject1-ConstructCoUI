@@ -18,11 +18,10 @@ export default class Showcase extends React.Component {
           possimus consectetur explicabo ad eveniet eos quae nam excepturi
           minima saepe dolorem earum.
           <br /><br />
-          <a href="list.html">
-            <button type="button" className="btn btn-primary">
-              View List of Employees
-            </button>
-          </a>
+          <button type="button" className="btn btn-primary"
+          onClick={() => console.log('change state n swap content')}>
+            View List of Employees
+          </button>
         </div>
       </div>
     </div>
