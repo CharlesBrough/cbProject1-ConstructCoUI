@@ -9,11 +9,6 @@ import Header from './components/Header.js';
 function App() {
   return (
     <div className="app-container">
-      {/* import fontawesome */}
-      <script
-        src="https://kit.fontawesome.com/d0feb81fc3.js"
-        crossOrigin="anonymous"
-      ></script>
       <Header />
       <Showcase />
       <footer>ConstructCo 2020</footer>
