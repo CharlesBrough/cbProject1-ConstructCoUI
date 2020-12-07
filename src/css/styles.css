@@ -56,14 +56,20 @@ nav ul li {
     float: left;
 }
 
-nav ul li a {
+.nav-btn {
+	background: none;
+	color: white;
+}
+
+nav ul li a, .nav-btn {
     display: block;
     text-align: center;
 	padding: 20px;
 	/* font-size: large; */
+	border: 0;
 }
 
-nav ul li a:hover, nav ul li a.current-page {
+nav ul li a:hover, .nav-btn:hover, nav ul li a.current-page, .nav-btn.current-page {
 	text-decoration: none;
 	color: #222;
 	background: tomato;

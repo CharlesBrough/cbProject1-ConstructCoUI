@@ -12,11 +12,11 @@ export default class Showcase extends React.Component {
       <header>
         <nav className="">
           <div className="nav-container">
-            <div className="logo"><a href="index.html">ConstructCo.</a></div>
+            <div className="logo"><a href="/">ConstructCo.</a></div>
             <ul>
-              <li><a className="current-page" href="index.html">Home</a></li>
-              <li><a className="" href="list.html">Employee List</a></li>
-              <li><a className="" href="form.html">Form</a></li>
+              <li><button className="nav-btn current-page" onClick={() => console.log('home btn clicked')}>Home</button></li>
+              <li><button className="nav-btn" onClick={() => console.log('list btn clicked')}>Employee List</button></li>
+              <li><button className="nav-btn" onClick={() => console.log('form btn clicked')}>Form</button></li>
             </ul>
           </div>
         </nav>
