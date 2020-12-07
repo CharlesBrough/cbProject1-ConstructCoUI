@@ -1,10 +1,11 @@
-// import './App.css';
+//CSS imports
+import './App.css';
 import './css/styles.css';
+
+//Component imports
 import Showcase from './components/Showcase.js';
 import Header from './components/Header.js';
 
-//using just class= doesn't work for some reason
-//react probably has its own way of rendering this JSX stuff
 function App() {
   return (
     <div className="react-container">
