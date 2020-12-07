@@ -2,14 +2,15 @@
 
 ## What is this?
 
-This is a front-end UI client for the Construction Company Server back-end written by Daniel R. It is a series of webpages accessible through a web browser that handles API requests through the website UI and contacts the back-end API for CRUD operations.
+This is a front-end UI client for the Construction Company Server back-end that was written by Daniel R. It is a Single Page Application accessible through a web browser that handles API requests through the website UI and contacts the back-end API for CRUD operations.
 
 ## Technologies Used
 
+- Node.js and npm
 - AWS EC2
-  - Apache Webserver
-  - Node.js and npm
   - Jenkins (& Tomcat on backend)
+    - NodeJS plugin for proper CI/CD
+- AWS S3 static website host bucket
 - HTML
 - CSS
 - JS
@@ -20,11 +21,17 @@ This is a front-end UI client for the Construction Company Server back-end writt
 
 ## Development
 
+### Prerequisites
+
+- Node.js 12+
+
+### How-to
+
 - Clone this repository to your dev machine
-- `cd` into the github repo (root react app directory contains `package.json` and `.gitignore`)
+- `cd` into the github repo
 - Run this command in bash: `npm run start`
 - Connect to `localhost:3000` on your browser
-- Begin editing `./src/...` and watch saved changes appear on the react app
+- Begin editing `./src/...` and watch saved changes appear on the react app site
 
 ## How to Use
 
