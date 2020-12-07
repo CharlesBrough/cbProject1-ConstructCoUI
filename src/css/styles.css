@@ -2,11 +2,6 @@
 Custom Styling
 */
 
-html, body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7em;
-}
-
 header {
 	height: 64px;
 	background: #333;
@@ -40,11 +35,11 @@ h1, h2, h3 {
 }
 
 .logo {
-	padding-top: 10px;
+	padding-top: 5px;
 	margin-left: 20px;
 	width: min-content;
 	display: inline-block;
-	font-size: 22pt;
+	font-size: 26pt;
 }
 
 .logo a:hover {
