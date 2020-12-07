@@ -9,9 +9,9 @@ export default class Showcase extends React.Component {
 
   render(){
     return (
-    <div class="showcase">
-      <div class="showcase-container">
-        <div class="showcase-content">
+    <div className="showcase">
+      <div className="showcase-container">
+        <div className="showcase-content">
           <h2>Construction Company Management Portal</h2>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
           ducimus non! Placeat maiores suscipit atque doloribus, corrupti
@@ -19,7 +19,7 @@ export default class Showcase extends React.Component {
           minima saepe dolorem earum.
           <br /><br />
           <a href="list.html">
-            <button type="button" class="btn btn-primary">
+            <button type="button" className="btn btn-primary">
               View List of Employees
             </button>
           </a>

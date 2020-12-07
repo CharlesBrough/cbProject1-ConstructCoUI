@@ -10,13 +10,13 @@ export default class Showcase extends React.Component {
   render(){
     return (
       <header>
-        <nav class="">
-          <div class="nav-container">
-            <div class="logo"><a href="index.html">ConstructCo.</a></div>
+        <nav className="">
+          <div className="nav-container">
+            <div className="logo"><a href="index.html">ConstructCo.</a></div>
             <ul>
-              <li><a class="current-page" href="index.html">Home</a></li>
-              <li><a class="" href="list.html">Employee List</a></li>
-              <li><a class="" href="form.html">Form</a></li>
+              <li><a className="current-page" href="index.html">Home</a></li>
+              <li><a className="" href="list.html">Employee List</a></li>
+              <li><a className="" href="form.html">Form</a></li>
             </ul>
           </div>
         </nav>
