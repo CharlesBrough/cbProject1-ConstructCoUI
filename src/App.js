@@ -1,5 +1,4 @@
 //CSS imports
-import './App.css';
 import './css/styles.css';
 
 //Component imports
