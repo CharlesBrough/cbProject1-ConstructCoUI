@@ -1,8 +1,11 @@
 # Construction Company Server UI
 
+## [Try it here!](http://revature-public-bucket.s3-website.us-east-2.amazonaws.com/)
+
 ## What is this?
 
 This is a front-end UI client for the Construction Company Server back-end that was written by Daniel R. It is a Single Page Application accessible through a web browser that handles API requests through the website UI and contacts the back-end API for CRUD operations.
+
 
 ## Technologies Used
 
