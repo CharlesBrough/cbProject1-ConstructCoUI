@@ -16,7 +16,7 @@ export default class Showcase extends React.Component {
             <ul>
               <li><button className="nav-btn current-page" onClick={() => console.log('home btn clicked')}>Home</button></li>
               <li><button className="nav-btn" onClick={() => console.log('list btn clicked')}>Employee List</button></li>
-              <li><button className="nav-btn" onClick={() => console.log('form btn clicked')}>Form</button></li>
+              <li><button className="nav-btn" onClick={() => console.log('form btn clicked')}>Edit</button></li>
             </ul>
           </div>
         </nav>

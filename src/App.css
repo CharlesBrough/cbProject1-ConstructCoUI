@@ -4,6 +4,28 @@ Custom Styling
 
 html, body {
 	background: #222;
+	color: lightgray;
+	height: 100%;
+	width: 100%;
+}
+
+#root {
+	height: 90%;
+}
+
+.caution-container {
+	background: repeating-linear-gradient(
+		-45deg,
+		rgb(97, 97, 18),
+		rgb(97, 97, 18) 10px,
+		black 10px,
+		black 20px
+	);
+	width: 100%;
+}
+
+.error-404 {
+	font-size: 44pt;
 }
 
 header {
@@ -125,4 +147,32 @@ footer {
 .showcase a:hover {
 	color: white;
 	text-decoration: none;
+}
+
+i.fas {
+	margin-right: 10px;
+}
+
+/* Employee List Table */
+#employee-list {
+	width: 90%;
+	margin: auto;
+	min-height: 600px;
+}
+
+#employee-list-title {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#employee-list-table-body {
+	text-align: left;
+}
+
+#employee-table {
+	border-radius: 15px;
+}
+
+.no-top-border {
+	border-top: none !important;
 }

@@ -1,3 +1,5 @@
+//these are not functional components
+
 const showAdmin = () => {
   if (isAdmin) {
     return (
