@@ -1,0 +1,124 @@
+/*
+Custom Styling
+*/
+
+header {
+	height: 64px;
+	background: #333;
+	display: block;
+}
+
+nav {
+	overflow: auto;
+	/* color: white; */
+}
+
+nav a {
+	color: white;
+}
+
+.nav-container {
+	width: 85%;
+	margin: auto;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+	padding-bottom: 20px;
+	/* display: block; */
+}
+
+.logo {
+	padding-top: 5px;
+	margin-left: 20px;
+	width: min-content;
+	display: inline-block;
+	font-size: 26pt;
+}
+
+.logo a:hover {
+	text-decoration: none;
+	color: #0bf;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+.nav-btn {
+	background: none;
+	color: white;
+}
+
+nav ul li a, .nav-btn {
+    display: block;
+    text-align: center;
+	padding: 20px;
+	/* font-size: large; */
+	border: 0;
+}
+
+nav ul li a:hover, .nav-btn:hover, nav ul li a.current-page, .nav-btn.current-page {
+	text-decoration: none;
+	color: #222;
+	background: tomato;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: blanchedalmond;
+	width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 20px 0;
+}
+
+/* showcase home page */
+.showcase {
+	background: url('../img/construction.jpg') no-repeat center center;
+	height: 500px;
+	padding: 0 50px;
+}
+
+.showcase .showcase-content {
+	background: rgba(0,0,0,0.8);
+	color: blanchedalmond;
+	text-align: center;
+	margin-top: 100px;
+	padding: 20px;
+	border-radius: 30px;
+	display: inline-block;
+}
+
+.showcase-content .title-header {
+	font-size: 2em;
+}
+
+.showcase-container {
+	max-width: 75%;
+	margin: auto;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.showcase a {
+	color: blanchedalmond;
+}
+
+.showcase a:hover {
+	color: white;
+	text-decoration: none;
+}

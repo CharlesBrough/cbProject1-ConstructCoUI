@@ -1,21 +1,28 @@
 pipeline {
     agent any
 
+    tools {nodejs "Default"}
+
     stages {
-        stage('placeholder'){
+        stage('install dependencies'){
             steps{
-                sh 'echo "this is a placeholder until further development"'
+                sh 'npm install'
             }
         }
-        // stage('build'){
-        //     steps{
-        //         sh 'npm run build'
-        //     }
-        // }
-        // stage('deploy'){
-        //     steps{
-        //         sh 'aws s3 cp --recursive /home/ec2-user/.jenkins/workspace/Construction-Frontend/build/ s3://revature-public-bucket/'
-        //     }
-        // }
+        stage('build'){
+            steps{
+                sh 'npm run build'
+            }
+        }
+        stage('clean s3'){
+            steps{
+                sh 'aws s3 rm s3://revature-public-bucket --recursive'
+            }
+        }
+        stage('deploy to s3'){
+            steps{
+                sh 'aws s3 cp --recursive /home/ec2-user/.jenkins/workspace/Construction-Frontend/build/ s3://revature-public-bucket/'
+            }
+        }
     }
 }
