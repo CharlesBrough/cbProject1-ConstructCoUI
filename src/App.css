@@ -2,9 +2,13 @@
 Custom Styling
 */
 
+html, body {
+	background: #222;
+}
+
 header {
 	height: 64px;
-	background: #333;
+	background: #733;
 	display: block;
 }
 
@@ -77,8 +81,8 @@ nav ul li a:hover, .nav-btn:hover, nav ul li a.current-page, .nav-btn.current-pa
 
 footer {
     text-align: center;
-    background: #333;
-    color: blanchedalmond;
+    background: #733;
+    color: white;
 	width: 100%;
     position: fixed;
     left: 0;
@@ -88,7 +92,7 @@ footer {
 
 /* showcase home page */
 .showcase {
-	background: url('../img/construction.jpg') no-repeat center center;
+	background: url('./img/construction.jpg') no-repeat center center;
 	height: 500px;
 	padding: 0 50px;
 }
