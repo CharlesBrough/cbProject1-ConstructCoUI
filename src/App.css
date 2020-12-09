@@ -2,9 +2,35 @@
 Custom Styling
 */
 
+html, body {
+	background: #222;
+	color: lightgray;
+	height: 100%;
+	width: 100%;
+}
+
+#root {
+	height: 90%;
+}
+
+.caution-container {
+	background: repeating-linear-gradient(
+		-45deg,
+		rgb(97, 97, 18),
+		rgb(97, 97, 18) 10px,
+		black 10px,
+		black 20px
+	);
+	width: 100%;
+}
+
+.error-404 {
+	font-size: 44pt;
+}
+
 header {
 	height: 64px;
-	background: #333;
+	background: #733;
 	display: block;
 }
 
@@ -77,8 +103,8 @@ nav ul li a:hover, .nav-btn:hover, nav ul li a.current-page, .nav-btn.current-pa
 
 footer {
     text-align: center;
-    background: #333;
-    color: blanchedalmond;
+    background: #733;
+    color: white;
 	width: 100%;
     position: fixed;
     left: 0;
@@ -88,7 +114,7 @@ footer {
 
 /* showcase home page */
 .showcase {
-	background: url('../img/construction.jpg') no-repeat center center;
+	background: url('./img/construction.jpg') no-repeat center center;
 	height: 500px;
 	padding: 0 50px;
 }
@@ -121,4 +147,32 @@ footer {
 .showcase a:hover {
 	color: white;
 	text-decoration: none;
+}
+
+i.fas {
+	margin-right: 10px;
+}
+
+/* Employee List Table */
+#employee-list {
+	width: 90%;
+	margin: auto;
+	min-height: 600px;
+}
+
+#employee-list-title {
+	padding-top: 20px;
+	text-align: center;
+}
+
+#employee-list-table-body {
+	text-align: left;
+}
+
+#employee-table {
+	border-radius: 15px;
+}
+
+.no-top-border {
+	border-top: none !important;
 }
