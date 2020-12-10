@@ -1,22 +1,38 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
 
 export default class Showcase extends React.Component {
-  //fetch & state
-    //state changes independently based on app
-  state = {
-    items: []
-  }
-
   render(){
     return (
       <header>
         <nav className="">
           <div className="nav-container">
-            <div className="logo"><a href="/">ConstructCo.</a></div>
+            <div className="logo">
+              <NavLink to="/" activeClassName="current-page">
+                <img src="hardhat.ico" />ConstructCo.
+                </NavLink>
+            </div>
             <ul>
-              <li><button className="nav-btn current-page" onClick={() => console.log('home btn clicked')}>Home</button></li>
-              <li><button className="nav-btn" onClick={() => console.log('list btn clicked')}>Employee List</button></li>
-              <li><button className="nav-btn" onClick={() => console.log('form btn clicked')}>Edit</button></li>
+              <li>
+                <NavLink exact to="/" activeClassName="current-page">
+                  <i className="fas fa-home"></i>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/view" activeClassName="current-page">
+                  <i className="fas fa-th-list"></i>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/form" activeClassName="current-page">
+                  <i className="fas fa-pencil-alt"></i>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/user" activeClassName="current-page">
+                  <i className="fas fa-sign-in-alt" ></i>
+                </NavLink>
+              </li>
             </ul>
           </div>
         </nav>
