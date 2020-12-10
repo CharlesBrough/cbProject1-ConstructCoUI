@@ -22,14 +22,14 @@ export default class Showcase extends React.Component {
           <Link to="/view">
             <button type="button" className="btn btn-warning"
           onClick={() => console.log('change state n swap content')}>
-            <i class="fas fa-th-list"></i>
+            <i className="fas fa-th-list"></i>
             View List of Employees
           </button>
           </Link>
           <br /><br />
           <button type="button" className="btn btn-warning"
           onClick={() => console.log('change state n swap content')}>
-            <i class="fas fa-sign-in-alt"></i>
+            <i className="fas fa-sign-in-alt"></i>
             Login to Portal
           </button>
         </div>
