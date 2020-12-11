@@ -1,3 +1,5 @@
+// this has been refactored to ./login-page/LoginPage.js
+// as a functional react component
 import Axios from 'axios';
 import React, { Component } from 'react';
 
@@ -11,7 +13,6 @@ export default class LoginPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // value: ''
       name: '',
       code: ''
     };
@@ -32,7 +33,7 @@ export default class LoginPage extends Component {
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.name + ' With a code of: ' + this.state.code);
     event.preventDefault();
-    const postRequest = Axios.post('http://3.17.206.158:8080/EmployeeServer/user', this.state, { withCredentials: true })
+    Axios.post('http://3.17.206.158:8080/EmployeeServer/user', this.state, { withCredentials: true })
       .then((resp) => {console.log(resp)});
   }
 
