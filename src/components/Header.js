@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 // export default class Showcase extends React.Component {
 const Showcase = () => {
-  // const store = useSelector();
   const user = useSelector(store => store);
 
   // render(){

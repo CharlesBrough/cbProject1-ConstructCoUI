@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import Axios from "axios";
 import { useHistory } from "react-router-dom";
 
-const AddEmployeeForm = () => {
+const RemoveEmployeeForm = () => {
   const [employee, setEmployee] = useState({
     name: "",
-    position: "",
   });
 
   const handleChange = (e) => {
@@ -16,9 +15,8 @@ const AddEmployeeForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const resp = await Axios.post(
-      "http://3.17.206.158:8080/EmployeeServer/employee",
-      employee,
+    const resp = await Axios.delete(
+      "http://3.17.206.158:8080/EmployeeServer/employee?name="+employee.name,
       {
         withCredentials: true,
       }
@@ -30,7 +28,7 @@ const AddEmployeeForm = () => {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <h3>Add Employee</h3>
+        <h3>Remove Employee</h3>
         <div className="form-group">
           <label htmlFor="name-input">Employee Name</label>
           <input
@@ -43,21 +41,6 @@ const AddEmployeeForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlSelect1">Employee Position</label>
-          <select
-            className="form-control"
-            id="exampleFormControlSelect1"
-            name="position"
-            value={employee.position}
-            onChange={handleChange}
-          >
-            <option>CEO</option>
-            <option>Contractor</option>
-            <option>Installer</option>
-            <option>HR</option>
-          </select>
-        </div>
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
@@ -66,4 +49,4 @@ const AddEmployeeForm = () => {
   );
 };
 
-export default AddEmployeeForm;
+export default RemoveEmployeeForm;

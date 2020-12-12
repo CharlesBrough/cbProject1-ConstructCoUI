@@ -10,7 +10,6 @@ import Footer from "./components/Footer.js";
 import Showcase from "./components/pages/Showcase.js";
 import FormPage from "./components/pages/form-page/FormPage.js";
 import ViewPage from './components/pages/view-page/ViewPage.js';
-// import LoginPage from './components/pages/LoginPage.js';
 import LoginPage from './components/pages/login-page/LoginPage.js';
 import Error404 from './components/pages/Error404.js';
 

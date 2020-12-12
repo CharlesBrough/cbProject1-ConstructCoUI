@@ -1,26 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import EmployeeTable from "./EmployeeTable";
 
-//react component
-class ViewPage extends React.Component {
-  state = { employees: [] };
+const ViewPage = () => {
+  const [employees, setEmployees] = useState([]);
+  const getEmployees = async () => {
+    const resp = await Axios.get("http://3.17.206.158:8080/EmployeeServer/employee");
+    setEmployees(resp.data);
+  };
 
-  componentDidMount() {
-    Axios.get("http://3.17.206.158:8080/EmployeeServer/employee")
-      .then((resp) => {
-        const employees = resp.data;
-        this.setState({ employees });
-      });
-  }
+  const refreshEmployees = () => getEmployees();
 
-  render() {
-    return (
-      <EmployeeTable employees={this.state.employees}
-      // refreshEmployees={ this.forceUpdate }
-      />
-    );
-  }
+  useEffect(() => {
+    getEmployees();
+  }, []);
+
+  return (
+    <EmployeeTable
+      employees={employees}
+      refreshEmployees={refreshEmployees}
+    />
+  )
 }
 
-export default ViewPage;
+export default ViewPage

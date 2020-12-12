@@ -23,6 +23,7 @@ const LoginPage = () => {
       withCredentials: true,
     }).then((resp) => {
       console.log(resp);
+      alert(JSON.stringify(resp));
     });
 
   //redux
@@ -32,7 +33,10 @@ const LoginPage = () => {
   const logout = () => {
     Axios.get("http://3.17.206.158:8080/EmployeeServer/user", {
       withCredentials: true,
-    }).then((resp) => console.log(resp));
+    }).then((resp) => {
+      console.log(resp);
+      alert(JSON.stringify(resp));
+    });
   };
 
   return (
@@ -67,7 +71,8 @@ const LoginPage = () => {
           Submit
         </button>
       </form>
-      <button onClick={logout}>Logout</button>
+      <br/>
+      <button className="btn btn-primary" onClick={logout}>Logout</button>
     </div>
   );
 };

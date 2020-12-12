@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import Axios from "axios";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-const AddEmployeeForm = () => {
+const UpdateEmployeeForm = () => {
   const [employee, setEmployee] = useState({
     name: "",
     position: "",
@@ -14,9 +14,9 @@ const AddEmployeeForm = () => {
 
   let history = useHistory();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const resp = await Axios.post(
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const resp = await Axios.put(
       "http://3.17.206.158:8080/EmployeeServer/employee",
       employee,
       {
@@ -27,10 +27,11 @@ const AddEmployeeForm = () => {
     history.push("/view");
   };
 
+  //dynamically render a dropdown box with employee names?
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
-        <h3>Add Employee</h3>
+        <h3>Update Employee Position</h3>
         <div className="form-group">
           <label htmlFor="name-input">Employee Name</label>
           <input
@@ -66,4 +67,4 @@ const AddEmployeeForm = () => {
   );
 };
 
-export default AddEmployeeForm;
+export default UpdateEmployeeForm;

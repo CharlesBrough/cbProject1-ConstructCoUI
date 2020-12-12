@@ -182,6 +182,7 @@ button i.fas, table i.fas {
 	width: 90%;
 	margin: auto;
 	min-height: 600px;
+	margin-bottom: 100px;
 	/* background: url('./img/construction-office.jpg'); */
 }
 
@@ -227,4 +228,11 @@ button i.fas, table i.fas {
 	margin-top: 30px;
 	background: #00285c;
 	border-radius: 20px;
+	border: 2px solid white;
+}
+
+form {
+	border: 1px solid lightblue;
+	padding: 10px;
+	border-radius: 10px;
 }
