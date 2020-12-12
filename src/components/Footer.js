@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
 
-export default class Footer extends Component {
-  render() {
-    return (
-      <footer>
-        ConstructCo. &copy; 2020
-      </footer>
-    )
-  }
-}
+const Footer = () => {
+  const user = useSelector(store => store);
+  return (
+  <footer>
+    ConstructCo. &copy; 2020 {(user.name) ? ' | Welcome, '+user.name+'!' : ''}
+  </footer>);
+};
+
+export default Footer;

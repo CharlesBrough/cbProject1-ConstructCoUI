@@ -45,7 +45,7 @@ nav {
 }
 
 nav i {
-	font-size: 15pt;
+	font-size: 24pt;
 }
 
 nav a {
@@ -107,7 +107,7 @@ nav ul li {
 nav ul li a, .nav-btn {
     display: block;
     text-align: center;
-	padding: 20px;
+	padding: 15px;
 	/* font-size: large; */
 	border: 0;
 }
@@ -182,6 +182,7 @@ button i.fas, table i.fas {
 	width: 90%;
 	margin: auto;
 	min-height: 600px;
+	margin-bottom: 100px;
 	/* background: url('./img/construction-office.jpg'); */
 }
 
@@ -220,11 +221,18 @@ button i.fas, table i.fas {
 /* Forms */
 
 .form-container {
-	color: black;
+	color: white;
 	width: 80%;
 	margin: auto;
 	padding: 30px;
 	margin-top: 30px;
-	background: #bbdef0;
+	background: #00285c;
 	border-radius: 20px;
+	border: 2px solid white;
+}
+
+form {
+	border: 1px solid lightblue;
+	padding: 10px;
+	border-radius: 10px;
 }

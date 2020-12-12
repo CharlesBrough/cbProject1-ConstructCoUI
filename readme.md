@@ -49,3 +49,7 @@ This is a front-end UI client for the Construction Company Server back-end that 
 ### Form page
 
 - Add, update, or delete
+
+# Doc nots
+
+Make it easy to know that I made this project...? Ask andrew what will said about docs?

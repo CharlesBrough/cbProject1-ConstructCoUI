@@ -1,25 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const insertTableData = (employee) => {
-  return (
-    <tr key={employee.id}>
-      <td>{employee.id}</td>
-      <td>{employee.name}</td>
-      <td>{employee.position}</td>
-      <td>
-        <Link to={"/form?name="+employee.name}>
-          <i className="fas fa-pencil-alt"></i>
-        </Link>
-        <Link to="/form?name=test&action=del">
-          <i className="fas fa-trash-alt"></i>
-        </Link>
-      </td>
-    </tr>
-  );
-}
-
 const EmployeeTable = ({ employees, refreshEmployees }) => {
+
+  const insertTableData = (employee) => {
+    return (
+      <tr key={employee.id}>
+        <td>{employee.id}</td>
+        <td>{employee.name}</td>
+        <td>{employee.position}</td>
+        <td>
+          <Link to={"/form?name="+employee.name}>
+            <i className="fas fa-pencil-alt"></i>
+          </Link>
+          <Link to="/form?name=test&action=del">
+            <i className="fas fa-trash-alt"></i>
+          </Link>
+        </td>
+      </tr>
+    );
+  }
+
   return (
     <section id="employee-list">
       <h1 id="employee-list-title" className="font-weight-bolder">
@@ -27,7 +28,7 @@ const EmployeeTable = ({ employees, refreshEmployees }) => {
       </h1>
       <div id="centerer">
         <button id="refresh-employees" className="btn btn-primary"
-          // onClick={() => insertTableData}
+          onClick={refreshEmployees}
         >
           <i className="fas fa-redo-alt"></i>
           Refresh
