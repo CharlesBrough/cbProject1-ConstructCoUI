@@ -11,7 +11,7 @@ This is a front-end UI client for the Construction Company Server back-end that 
 - Node.js and npm
 - AWS EC2
   - Jenkins (& Tomcat on backend)
-    - NodeJS plugin for proper CI/CD
+    - NodeJS plugin for proper CI/CD of frontend
 - AWS S3 static website host bucket
 - HTML
 - CSS
@@ -19,6 +19,7 @@ This is a front-end UI client for the Construction Company Server back-end that 
 - React.js
   - Webpack
   - Babel
+  - Redux
   - & more
 
 ## Development
@@ -50,6 +51,4 @@ This is a front-end UI client for the Construction Company Server back-end that 
 
 - Add, update, or delete
 
-# Doc nots
-
-Make it easy to know that I made this project...? Ask andrew what will said about docs?
+### Login page
