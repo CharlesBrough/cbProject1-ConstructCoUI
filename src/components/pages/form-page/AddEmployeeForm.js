@@ -28,7 +28,7 @@ const AddEmployeeForm = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container add">
       <form onSubmit={handleSubmit}>
         <h3>Add Employee</h3>
         <div className="form-group">

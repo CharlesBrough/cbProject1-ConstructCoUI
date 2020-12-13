@@ -29,7 +29,7 @@ const UpdateEmployeeForm = () => {
 
   //dynamically render a dropdown box with employee names?
   return (
-    <div className="form-container">
+    <div className="form-container update">
       <form onSubmit={handleSubmit}>
         <h3>Update Employee Position</h3>
         <div className="form-group">

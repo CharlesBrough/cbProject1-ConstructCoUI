@@ -26,7 +26,7 @@ const RemoveEmployeeForm = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container delete">
       <form onSubmit={handleSubmit}>
         <h3>Remove Employee</h3>
         <div className="form-group">

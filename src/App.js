@@ -18,13 +18,15 @@ function App() {
     <>
       <Router>
         <Header />
+          <div className="wrapper">
         <Switch>
-          <Route exact path="/" component={Showcase} />
-          <Route exact path="/form" component={FormPage} />
-          <Route exact path="/view" component={ViewPage} />
-          <Route exact path="/user" component={LoginPage} />
-          <Route path="/" component={Error404} />
+            <Route exact path="/" component={Showcase} />
+            <Route exact path="/form" component={FormPage} />
+            <Route exact path="/view" component={ViewPage} />
+            <Route exact path="/user" component={LoginPage} />
+            <Route path="/" component={Error404} />
         </Switch>
+          </div>
         <Footer />
       </Router>
     </>

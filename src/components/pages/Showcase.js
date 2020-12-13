@@ -24,7 +24,6 @@ export default class Showcase extends React.Component {
               <button
                 type="button"
                 className="btn btn-warning"
-                // onClick={() => console.log("change state n swap content")}
               >
                 <i className="fas fa-th-list"></i>
                 View List of Employees
@@ -36,7 +35,6 @@ export default class Showcase extends React.Component {
               <button
                 type="button"
                 className="btn btn-warning"
-                // onClick={() => console.log("change state n swap content")}
               >
                 <i className="fas fa-sign-in-alt"></i>
                 Login to Portal
