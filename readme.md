@@ -1,10 +1,12 @@
 # Construction Company Server UI
 
-### [**Try it here!**](http://revature-public-bucket.s3-website.us-east-2.amazonaws.com/)
+### [**Static website hosted here!**](http://revature-public-bucket.s3-website.us-east-2.amazonaws.com/)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=CharlesBrough_cbProject1-ConstructCoUI&metric=alert_status)](https://sonarcloud.io/dashboard?id=CharlesBrough_cbProject1-ConstructCoUI)
 
 ## What is this?
 
-This is a front-end UI client for the Construction Company Server back-end that was written by Daniel R. It is a Single Page Application accessible through a web browser that handles API requests through the website UI and contacts the back-end API for CRUD operations.
+This is a front-end UI client for the Construction Company Server back-end that was written by Daniel R. It is a Single Page Application accessible through a web browser that handles API requests through the website UI and contacts the back-end API for CRUD operations. [The backend can be accessed through this endpoint, which is an example of the 'get all employees' functionality.](http://3.17.206.158:8080/EmployeeServer/employee)
 
 ## Technologies Used
 
@@ -32,10 +34,12 @@ This is a front-end UI client for the Construction Company Server back-end that 
 ### List page
 
 - Lists all employees of the Construction Company
+- Contains links to the editing page to change database data
 
 ### Form page
 
-- Add, update, or delete
+- Add, update, or delete selection
+- Each has a unique form that will send data to the backend for the specified operation
 
 ### Login page
 
