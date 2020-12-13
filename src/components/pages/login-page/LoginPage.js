@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // would need for class components
 // import { connect } from "react-redux";
 import { useSelector } from "react-redux";
