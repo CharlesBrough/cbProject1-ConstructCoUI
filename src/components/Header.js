@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 const Header = () => {
   const user = useSelector(store => store);
 
-  // render(){
   return (
     <header>
       <nav className="">
@@ -29,7 +28,10 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/form" activeClassName="current-page">
+              <NavLink to="/form"
+              className={user.name ? "" : " disabled-link"}
+              activeClassName="current-page"
+              >
                 <i className="fas fa-pencil-alt"></i>
               </NavLink>
             </li>
@@ -44,7 +46,6 @@ const Header = () => {
       </nav>
     </header>
   );
-  // }
 };
 
 export default Header;
