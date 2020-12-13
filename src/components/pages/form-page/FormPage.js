@@ -27,7 +27,7 @@ const FormPage = () => {
 
   return (
     <>
-      <div className="form-container">
+      <div className="form-container first">
         <h2 className="font-weight-bold">Edit Employees</h2>
         <div className="form-group">
           <label htmlFor="exampleFormControlSelect1">

@@ -25,15 +25,13 @@ const EmployeeTable = ({ employees, refreshEmployees }) => {
     <section id="employee-list">
       <h1 id="employee-list-title" className="font-weight-bolder">
         Employee List
-      </h1>
-      <div id="centerer">
         <button id="refresh-employees" className="btn btn-primary"
           onClick={refreshEmployees}
         >
           <i className="fas fa-redo-alt"></i>
           Refresh
         </button>
-      </div>
+      </h1>
       <table id="employee-table" className="table table-dark table-striped table-hover">
         <thead>
           <tr>

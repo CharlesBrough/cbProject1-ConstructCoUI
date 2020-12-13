@@ -40,7 +40,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container first">
       <form onSubmit={handleSubmit}>
         <h3>Login to the Employee Server</h3>
         <div className="form-group">

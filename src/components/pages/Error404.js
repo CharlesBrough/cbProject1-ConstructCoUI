@@ -1,13 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Error404 extends Component {
-  render() {
-    return (
-      <div id="pg-404" className="h-100 d-flex justify-content-center align-items-center">
-        <div className="caution-container">
-          <div className="error-404 text-center">Error 404! Page not found.</div>
-        </div>
+const Error404 = () => {
+  return (
+    <div
+      id="pg-404"
+      className="h-100 d-flex justify-content-center align-items-center"
+    >
+      <div className="caution-container">
+        <div className="error-404 text-center">Error 404! Page not found.</div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default Error404;

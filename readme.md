@@ -22,20 +22,6 @@ This is a front-end UI client for the Construction Company Server back-end that 
   - Redux
   - & more
 
-## Development
-
-### Prerequisites
-
-- Node.js 12+
-
-### How-to
-
-- Clone this repository to your dev machine
-- `cd` into the github repo
-- Run this command in bash: `npm run start`
-- Connect to `localhost:3000` on your browser
-- Begin editing `./src/...` and watch saved changes appear on the react app site
-
 ## How to Use
 
 ### Home page
@@ -52,3 +38,19 @@ This is a front-end UI client for the Construction Company Server back-end that 
 - Add, update, or delete
 
 ### Login page
+
+- Login and logout
+
+## Development
+
+### Prerequisites
+
+- Node.js 12+
+
+### How-to
+
+- Clone this repository to your dev machine
+- `cd` into the github repo
+- Run this command in bash: `npm run start`
+- Connect to `localhost:3000` on your browser
+- Begin editing `./src/...` and watch saved changes appear on the react app site
