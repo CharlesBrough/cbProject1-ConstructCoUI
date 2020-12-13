@@ -22,20 +22,20 @@ const LoginPage = () => {
     Axios.post("http://3.17.206.158:8080/EmployeeServer/user", user, {
       withCredentials: true,
     }).then((resp) => {
-      console.log(resp);
-      alert(JSON.stringify(resp));
-    });
+      // console.log(resp);
+      // alert(JSON.stringify(resp));
 
-  //redux
-  dispatch(login(user));
+      //redux
+      dispatch(login(user));
+    });
   };
 
   const logout = () => {
     Axios.get("http://3.17.206.158:8080/EmployeeServer/user", {
       withCredentials: true,
     }).then((resp) => {
-      console.log(resp);
-      alert(JSON.stringify(resp));
+      // console.log(resp);
+      // alert(JSON.stringify(resp));
     });
   };
 
