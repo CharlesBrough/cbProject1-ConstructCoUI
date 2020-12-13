@@ -5,13 +5,18 @@ Custom Styling
 html,
 body {
   background: #222;
-  color: lightgray;
+  /* color: lightgray; */
   height: 90%;
   width: 100%;
 }
 
 #root {
   height: 80%;
+}
+
+/* react toastify overrides */
+.Toastify__toast-container--bottom-center {
+  margin-bottom: 33px !important;
 }
 
 /* 404 styling */
@@ -41,6 +46,12 @@ body {
 }
 
 /* Header */
+
+/* Link disabling */
+
+.disabled-link {
+  pointer-events: none;
+}
 
 nav {
   overflow: auto;

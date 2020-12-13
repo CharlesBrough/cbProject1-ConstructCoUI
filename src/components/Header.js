@@ -3,10 +3,9 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 // export default class Showcase extends React.Component {
-const Showcase = () => {
+const Header = () => {
   const user = useSelector(store => store);
 
-  // render(){
   return (
     <header>
       <nav className="">
@@ -29,7 +28,10 @@ const Showcase = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/form" activeClassName="current-page">
+              <NavLink to="/form"
+              className={user.name ? "" : " disabled-link"}
+              activeClassName="current-page"
+              >
                 <i className="fas fa-pencil-alt"></i>
               </NavLink>
             </li>
@@ -44,7 +46,6 @@ const Showcase = () => {
       </nav>
     </header>
   );
-  // }
 };
 
-export default Showcase;
+export default Header;

@@ -22,6 +22,7 @@ This is a front-end UI client for the Construction Company Server back-end that 
   - Webpack
   - Babel
   - Redux
+  - React Toastify
   - & more
 
 ## How to Use
