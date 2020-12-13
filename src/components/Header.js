@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 // export default class Showcase extends React.Component {
-const Showcase = () => {
+const Header = () => {
   const user = useSelector(store => store);
 
   // render(){
@@ -47,4 +47,4 @@ const Showcase = () => {
   // }
 };
 
-export default Showcase;
+export default Header;
