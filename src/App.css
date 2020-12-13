@@ -5,7 +5,7 @@ Custom Styling
 html,
 body {
   background: #222;
-  color: lightgray;
+  /* color: lightgray; */
   height: 90%;
   width: 100%;
 }
