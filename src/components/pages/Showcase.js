@@ -10,7 +10,7 @@ const Showcase = () => {
       <div className="showcase-container">
         <div className="showcase-content">
           <h2>Construction Company Management Portal</h2>
-          This is a web portal for listing, adding, updating, and removing employees from ConstructCo's rosters. You must login as an admin before having access to the edit page, but you are free to view the list of employees without admin credentials.
+          This is a web portal for listing, adding, updating, and removing employees from ConstructCo's rosters. It contacts the backend API which is hosted on another resource. You must login as an admin before having access to the edit page, but you are free to view the list of employees without admin credentials.
           <br />
           <br />
           <Link to="/view">

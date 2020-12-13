@@ -30,21 +30,26 @@ This is a front-end UI client for the Construction Company Server back-end that 
 ### Home page
 
 - Describes the front-end UI and back-end server
-- Contains links to other pages that provide functionality
+- Contains links to the view list page and the login page
+  - You can view the list of employees without being logged in as an admin!
+- The header and footer are constant across the website, whereas the main content is changed and managed by a React Router Switch
+  - The header can be used to navigate to the different pages in the site
 
 ### List page
 
 - Lists all employees of the Construction Company
-- Contains links to the editing page to change database data
+- Contains links to the editing page to change database data when logged in as admin
 
 ### Form page
 
-- Add, update, or delete selection
-- Each has a unique form that will send data to the backend for the specified operation
+- Add, update, or delete employees based on what you need
+- Conditional rendering for each form so you can be sure you're doing the action you want
+- Each unique form will send data to the backend for the specified operation and return you to the employee list upon success
 
 ### Login page
 
-- Login and logout
+- When not logged in, the login page will display a form for entering credentials and logging in
+- When logged in, the login page will contain a logout button to terminate the HTTP session
 
 ## Development
 
