@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AddEmployeeForm from "./AddEmployeeForm.js";
 import UpdateEmployeeForm from "./UpdateEmployeeForm.js";
 import RemoveEmployeeForm from "./RemoveEmployeeForm.js";
+import { useParams } from "react-router-dom";
 
 const FormPage = () => {
+  const { passedAction } = useParams();
+
   const [action, setAction] = useState({
     action: "Add Employee",
   });
@@ -11,6 +14,13 @@ const FormPage = () => {
   const handleChange = (e) => {
     setAction({ ...action, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    if (passedAction !== undefined) {
+      setAction({...action, action: passedAction });
+    }
+    // eslint-disable-next-line
+  }, []);
 
   const renderSwitch = (param) => {
       switch (param) {

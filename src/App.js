@@ -26,6 +26,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Showcase} />
             <Route exact path="/form" component={FormPage} />
+            <Route path="/form/:passedAction/:employeeName" exact component={FormPage} />
             <Route exact path="/view" component={ViewPage} />
             <Route exact path="/user" component={LoginPage} />
             <Route path="/" component={Error404} />

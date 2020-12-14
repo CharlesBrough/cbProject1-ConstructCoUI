@@ -13,10 +13,10 @@ const EmployeeTable = ({ employees, refreshEmployees }) => {
         <td>{employee.position}</td>
         {user.name ? (
           <td>
-            <Link to={"/form?name=" + employee.name}>
+            <Link to={"/form/Update Employee Position/"+employee.name}>
               <i className="fas fa-pencil-alt"></i>
             </Link>
-            <Link to="/form?name=test&action=del">
+            <Link to={"/form/Remove Employee/"+employee.name}>
               <i className="fas fa-trash-alt"></i>
             </Link>
           </td>
