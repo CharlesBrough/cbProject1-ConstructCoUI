@@ -11,7 +11,7 @@ const EmployeeTable = ({ employees, refreshEmployees }) => {
         <td>{employee.id}</td>
         <td>{employee.name}</td>
         <td>{employee.position}</td>
-        {user.name ? (
+        {user.name && (
           <td>
             <Link to={"/form/Update Employee Position/"+employee.name}>
               <i className="fas fa-pencil-alt"></i>
@@ -20,8 +20,6 @@ const EmployeeTable = ({ employees, refreshEmployees }) => {
               <i className="fas fa-trash-alt"></i>
             </Link>
           </td>
-        ) : (
-          <td></td>
         )}
       </tr>
     );
@@ -49,12 +47,12 @@ const EmployeeTable = ({ employees, refreshEmployees }) => {
             <th className="no-top-border">ID</th>
             <th>Employee Name</th>
             <th>Position</th>
-            {user.name ? <th className="no-top-border">Edit</th> : ""}
+            {user.name && <th className="no-top-border">Edit</th>}
           </tr>
         </thead>
         <tbody id="employee-list-table-body">
           {employees.map((employee) => insertTableData(employee))}
-          {user.name ? (
+          {user.name && (
             <tr className="bg-success">
               <td>
                 <Link to="/form?action=add" className="font-weight-bolder">
@@ -70,8 +68,6 @@ const EmployeeTable = ({ employees, refreshEmployees }) => {
                 </Link>
               </td>
             </tr>
-          ) : (
-            ""
           )}
         </tbody>
       </table>
