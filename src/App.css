@@ -5,7 +5,7 @@ Custom Styling
 html,
 body {
   background: #222;
-  /* color: lightgray; */
+  color: white;
   height: 90%;
   width: 100%;
 }
@@ -281,4 +281,17 @@ form {
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 10px;
   border-radius: 10px;
+}
+
+#charizard {
+  height: 22px;
+  width: 22px;
+  float: right;
+  margin-right: 22px;
+}
+
+.json-block {
+  background: black;
+  margin: 0 50px 100px;
+  color: green;
 }
