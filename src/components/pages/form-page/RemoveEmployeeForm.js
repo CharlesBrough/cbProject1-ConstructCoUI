@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
+import EmployeeNameDropdown from "./EmployeeNameDropdown";
 
 const RemoveEmployeeForm = () => {
   const [employee, setEmployee] = useState({
     name: "",
   });
+
+  const { employeeName } = useParams();
+
+  useEffect(() => {
+    if (employeeName !== undefined) {
+      setEmployee({ ...employee, name: employeeName });
+    }
+    // eslint-disable-next-line
+  }, []);
 
   const handleChange = (e) => {
     setEmployee({ ...employee, [e.target.name]: e.target.value });
@@ -16,7 +26,7 @@ const RemoveEmployeeForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const resp = await Axios.delete(
-      "http://3.17.206.158:8080/EmployeeServer/employee?name="+employee.name,
+      "http://3.17.206.158:8080/EmployeeServer/employee?name=" + employee.name,
       {
         withCredentials: true,
       }
@@ -30,19 +40,11 @@ const RemoveEmployeeForm = () => {
       <form onSubmit={handleSubmit}>
         <h3>Remove Employee</h3>
         <div className="form-group">
-          <label htmlFor="name-input">Employee Name</label>
-          <input
-            type="text"
-            className="form-control"
-            id="name-input"
-            placeholder="Enter employee name"
-            name="name"
-            value={employee.name}
-            onChange={handleChange}
-          />
+          <label htmlFor="exampleFormControlSelect1">Select an Employee</label>
+          <EmployeeNameDropdown val={employee.name} onChange={handleChange} />
         </div>
         <button type="submit" className="btn btn-primary">
-          Submit
+          Remove
         </button>
       </form>
     </div>

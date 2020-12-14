@@ -11,6 +11,7 @@ import Showcase from "./components/pages/Showcase.js";
 import FormPage from "./components/pages/form-page/FormPage.js";
 import ViewPage from "./components/pages/view-page/ViewPage.js";
 import LoginPage from "./components/pages/login-page/LoginPage.js";
+import Charizard from "./components/pages/Charizard";
 import Error404 from "./components/pages/Error404.js";
 
 //Importing necessary components for notifications through react-toastify
@@ -26,8 +27,10 @@ function App() {
           <Switch>
             <Route exact path="/" component={Showcase} />
             <Route exact path="/form" component={FormPage} />
+            <Route path="/form/:passedAction/:employeeName" exact component={FormPage} />
             <Route exact path="/view" component={ViewPage} />
             <Route exact path="/user" component={LoginPage} />
+            <Route exact path="/charizard" component={Charizard} />
             <Route path="/" component={Error404} />
           </Switch>
         </div>
