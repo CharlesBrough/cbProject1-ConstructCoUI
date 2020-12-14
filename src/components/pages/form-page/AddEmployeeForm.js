@@ -16,14 +16,14 @@ const AddEmployeeForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const resp = await Axios.post(
+    // const resp = await Axios.post(
+    await Axios.post(
       "http://3.17.206.158:8080/EmployeeServer/employee",
       employee,
       {
         withCredentials: true,
       }
     );
-    console.log(resp);
     history.push("/view");
   };
 

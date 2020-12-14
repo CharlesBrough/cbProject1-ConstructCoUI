@@ -37,7 +37,6 @@ const Header = () => {
             </li>
             <li>
               <NavLink to="/user" activeClassName="current-page">
-                {console.log(user)}
                 <i className="fas fa-sign-in-alt"></i>
               </NavLink>
             </li>

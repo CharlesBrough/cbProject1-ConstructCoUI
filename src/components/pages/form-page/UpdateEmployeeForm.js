@@ -14,8 +14,6 @@ const UpdateEmployeeForm = () => {
   useEffect(() => {
     if (employeeName !== undefined) {
       setEmployee({ ...employee, name: employeeName });
-      console.log(employeeName);
-      console.log(employee);
     }
     // eslint-disable-next-line
   }, []);
@@ -28,14 +26,13 @@ const UpdateEmployeeForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const resp = await Axios.put(
+    await Axios.put(
       "http://3.17.206.158:8080/EmployeeServer/employee",
       employee,
       {
         withCredentials: true,
       }
     );
-    console.log(resp);
     history.push("/view");
   };
 

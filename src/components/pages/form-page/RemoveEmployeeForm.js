@@ -25,13 +25,12 @@ const RemoveEmployeeForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const resp = await Axios.delete(
+    await Axios.delete(
       "http://3.17.206.158:8080/EmployeeServer/employee?name=" + employee.name,
       {
         withCredentials: true,
       }
     );
-    console.log(resp);
     history.push("/view");
   };
 
