@@ -30,7 +30,7 @@ body {
   );
   width: 100%;
   /* transform: rotate(-1deg); */
-  margin-top: -222px;
+  /* margin-top: -222px; */
 }
 
 .error-404 {
@@ -43,6 +43,7 @@ body {
 #pg-404 {
   background: url("./img/caution-tape.jpg") no-repeat center center;
   background-size: cover;
+  min-height: 600px;
 }
 
 /* Header */
