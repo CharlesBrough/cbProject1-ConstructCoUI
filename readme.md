@@ -18,6 +18,7 @@ This is a front-end UI client for the Construction Company Server back-end that 
 - HTML
 - CSS
 - JS
+- FontAwesome
 - React.js
   - Webpack
   - Babel
@@ -64,3 +65,13 @@ This is a front-end UI client for the Construction Company Server back-end that 
 - Run this command in bash: `npm run start`
 - Connect to `localhost:3000` on your browser
 - Begin editing `./src/...` and watch saved changes appear on the react app site
+
+# Contributions
+
+- Daniel Reyes: [Backend API](https://github.com/2011JavaReact/DanielReyes_Project00)
+- [2011JavaReact Org](https://github.com/2011JavaReact)
+- Bach Tran for main UI inspiration
+
+# Known issues
+
+- Login cookie is only valid until refresh; needs refactoring on front and back end to handle cookies better
