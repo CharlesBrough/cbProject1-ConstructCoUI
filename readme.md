@@ -18,6 +18,7 @@ This is a front-end UI client for the Construction Company Server back-end that 
 - HTML
 - CSS
 - JS
+- Bootstrap
 - FontAwesome
 - React.js
   - Webpack
