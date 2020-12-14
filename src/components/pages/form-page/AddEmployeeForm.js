@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 const AddEmployeeForm = () => {
   const [employee, setEmployee] = useState({
     name: "",
-    position: "",
+    position: "HR",
   });
 
   const handleChange = (e) => {
@@ -52,14 +52,14 @@ const AddEmployeeForm = () => {
             value={employee.position}
             onChange={handleChange}
           >
+            <option>HR</option>
             <option>CEO</option>
             <option>Contractor</option>
             <option>Installer</option>
-            <option>HR</option>
           </select>
         </div>
         <button type="submit" className="btn btn-primary">
-          Submit
+          Add
         </button>
       </form>
     </div>

@@ -1,12 +1,24 @@
 import Axios from "axios";
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
+import EmployeeNameDropdown from "./EmployeeNameDropdown";
 
 const UpdateEmployeeForm = () => {
   const [employee, setEmployee] = useState({
     name: "",
-    position: "",
+    position: "HR",
   });
+
+  const { employeeName } = useParams();
+
+  useEffect(() => {
+    if (employeeName !== undefined) {
+      setEmployee({ ...employee, name: employeeName });
+      console.log(employeeName);
+      console.log(employee);
+    }
+    // eslint-disable-next-line
+  }, []);
 
   const handleChange = (e) => {
     setEmployee({ ...employee, [e.target.name]: e.target.value });
@@ -33,16 +45,8 @@ const UpdateEmployeeForm = () => {
       <form onSubmit={handleSubmit}>
         <h3>Update Employee Position</h3>
         <div className="form-group">
-          <label htmlFor="name-input">Employee Name</label>
-          <input
-            type="text"
-            className="form-control"
-            id="name-input"
-            placeholder="Enter employee name"
-            name="name"
-            value={employee.name}
-            onChange={handleChange}
-          />
+          <label htmlFor="exampleFormControlSelect1">Select an Employee</label>
+          <EmployeeNameDropdown val={employee.name} onChange={handleChange} />
         </div>
         <div className="form-group">
           <label htmlFor="exampleFormControlSelect1">Employee Position</label>
@@ -53,14 +57,14 @@ const UpdateEmployeeForm = () => {
             value={employee.position}
             onChange={handleChange}
           >
+            <option>HR</option>
             <option>CEO</option>
             <option>Contractor</option>
             <option>Installer</option>
-            <option>HR</option>
           </select>
         </div>
         <button type="submit" className="btn btn-primary">
-          Submit
+          Update
         </button>
       </form>
     </div>
